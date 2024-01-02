@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07_table</title>
+</head>
+<body>
+    <!-- <table></table> : 테이블을 구성하기 위한 가장 큰 범위 태그
+         <tr></tr> : 가로줄을 만드는 태그 ()
+         <td></td> : 셀(칸)을 만드는 태그 () . 기본값 : 보통글씨, 왼쪽정렬
+         
+         <th></th> : 표의 제목을 만드는 태그 (*td 대신 사용) . 기본값 : 볼드체, 가운데정렬
+
+         border : 테이블의 윤곽선 두께 -->
+
+         <!--
+         Tap : 왼쪽으로 탭
+         
+         shift + Tap : 오른쪽으로 탭
+         
+         alt + 방향키 : 한 줄 이동
+
+         shift + alt + 방향키 : 한 줄 복사
+
+         shift + home : 커서 기준 앞으로 선택
+
+         shift + end : 커서 기준 뒤로 선택
+
+         ctrl + y : 실행취소를 원복
+
+         ctrl + / : 주석 만들기 또는 풀기  -->
+
+
+<br>
+<table border="1">
+    <tr>
+        <th>11111</th>
+        <th>22222</th>
+    </tr>
+    <tr>
+        <td>333333333</td>
+        <td>444444444</td>
+    </tr>
+</table>
+<br>
+<hr>
+<br>
+<table border="1">
+    <tr>
+        <th>언어</th>
+        <th>난이도</th>
+        <th>학습기간</th>
+    </tr>
+    <tr>
+        <td>HTML</td>
+        <td>하</td>
+        <td>1주</td>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>중</td>
+        <td>1주</td>
+    </tr>
+    <tr>
+        <td>javascript</td>
+        <td>상</td>
+        <td>2주</td>
+    </tr>
+</table>
+
+<!-- 테이블 열병합
+    <td colspan="숫자" : 가로로 ~칸 차지해라
+    <td rowspan="숫자" : 세로로 ~칸 차지해라
+-->
+    <table border = "1">
+        <tr>
+            <td colspan="2">1</td> <!--가로로 두 칸 차지해라-->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <table border = "1">
+        <tr>
+            <td rowspan="2">1</td>  <!--세로로 두 칸 차지해라-->
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+    </table>
+
+</body>
+</html>

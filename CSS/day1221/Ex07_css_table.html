@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07_css_table</title>
+
+    <style>
+        h1 {
+            padding: 10px;
+            background-color: lightcoral;
+            color: black;
+            width: 48.5%;
+            text-align: center;
+
+        }
+        ol, ul {
+            list-style-type: none;
+            border: 1px solid black;
+            background-color: darkseagreen;
+            /* ol, ul은 디자인상 들여쓰기가 기본값 
+                > 들여쓰기 여백 조정은 'padding 값으로 조절(px). 0px이면 여백 사라짐 */
+            padding: 1px;
+            width: 50%;
+        }
+        li {
+            border: 1px solid red;
+        }
+
+        table {
+            background-color: pink;
+            border: 3px solid pink;
+            border-collapse: separate;
+            border-spacing: 20px 30px;
+            width: 50%;
+            height: 300px;
+            /* 너비와 높이는 고정할 경우 문제가 되는 경우도 있음. */
+            
+        }
+        tr {
+            border: 1px solid red;
+        }
+        td {
+            border: 2px solid orange;
+            text-align: center; /*가로정렬*/
+            vertical-align: top; /*세로정렬*/
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>바나나</li>
+        <li>수박</li>
+    </ol>
+    
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h1>WELCOME:)</h1>
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>400</td>
+        </tr>
+    </table>
+        
+</body>
+</html>
