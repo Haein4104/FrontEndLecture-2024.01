@@ -43,4 +43,3 @@ console.log(x > 8 || x < -3);                                   // : OR(||) ; x 
 console.log(x > 8 && x < 12);                                   // : AND (&&) ; 8 < x < 12
 console.log(true > 10); // 논리형(boolean)에서는 자동적으로 true는 1, false는 0이 됨
                         // 조건문(if)에서는 false가 0, 값이 없을 때는 null, 값이 있으면 true로 취급함
-
