@@ -28,4 +28,4 @@ if (dice1 == dice2 && dice2 == dice3) {				//if (dice1 == dice2 == dice3)
 	let maxDice = Math.max(dice1, dice2, dice3);
 	prize = maxDice * 100;
 }
-console.log(`${dice1}, ${dice2}, ${dice3} --> ${prize}원`);
+console.log(`${dice1}, ${dice2}, ${dice3} --> ${prize}원`); 
