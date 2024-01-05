@@ -13,4 +13,10 @@ let divisors1 = getDivisors(12);
 let divisors2 = getDivisors(30);
 console.log(divisors1);
 console.log(divisors2);
-console.log(divisors1.intersection(divisors2));
+
+let commonDivisors = [];
+for (let item of divisors1) {
+    if (divisors2.has(item))
+        commonDivisors.add(item);
+}
+console.log(commonDivisors);
