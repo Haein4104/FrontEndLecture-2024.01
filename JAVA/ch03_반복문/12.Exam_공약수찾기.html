@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두 수의 공약수 찾기</title>
+    <script>
+        function divisor() {        // Diamond 만들기의 document 참조
+        let num1 = Number(document.getElementById('num1').value);
+        let num2 = Number(document.getElementById('num2').value);
+        let commonDivisor =[];      // ex 3. 두 수의 공약수 구하기 참조
+        for (let i = 1; i <=Math.min(num1, num2); i++){
+            if(num1 % i == 0 && num2 % i == 0)
+                commonDivisor.push(i);
+        }
+        let resultTag = document.getElementById('result');      // 결과 출력
+        resultTag.innerHTML = commonDivisor;
+    }
+    </script>
+</head>    
+
+<body style="margin: 50px;">
+    <h3>두 수의 공약수 찾기</h3>
+    <hr>
+    <!-- script의 num1, num2가 구현되도록 input 적용 -->
+    <input type="text" id="num1" placeholder="정수를 입력하세요."/>
+    <input type="text" id="num2" placeholder="정수를 입력하세요."/>
+    
+    <button onclick="divisor()">확인</button>
+    <hr>
+    <!-- 결과 출력 -->
+    <div id="result"></div>
+
+</body>
+</html>
