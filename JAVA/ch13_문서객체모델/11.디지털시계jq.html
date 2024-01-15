@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>디지털 시계</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         function twoDigit(num) {
             return (num < 10) ? '0' + num : String(num);
@@ -12,6 +13,7 @@
             return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
                 `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`;
         }
+        /*
         window.onload = function() {
             setInterval(function() {
                 const now = new Date();
@@ -23,6 +25,7 @@
                 document.getElementById('nowaday').innerHTML = full;
             }, 1000);
         }
+        */
     </script>
 </head>
 <body style="margin: 50px;">
