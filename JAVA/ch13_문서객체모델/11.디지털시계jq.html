@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>디지털 시계</title>
+    <title>디지털 시계(JQeury)</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-        function twoDigit(num) {
-            return (num < 10) ? '0' + num : String(num);
+        $('#for').ready(function () {
+            const twoDigit = function (num) {
+                return (num < 10) ? '0' + num : String(num);
         }
-        function myDateTime(date) {
-            return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
+            const myDateTime = function (date) {
+                return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
                 `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`;
         }
-        /*
-        window.onload = function() {
+        
             setInterval(function() {
                 const now = new Date();
                 const week = '일월화수목금토'.split('');
@@ -22,13 +22,12 @@
                 dateStr += '(' + week[now.getDay()] +')';
                 const timeStr = myDateTime(now).substring(11);
                 let full = dateStr + ' ' + timeStr;
-                document.getElementById('nowaday').innerHTML = full;
+                $('#nowaday').html(full)
             }, 1000);
-        }
-        */
+        });        
     </script>
 </head>
-<body style="margin: 50px;">
+<body style="margin: 50px">
     <h2 id="nowaday"></h2>
 </body>
 </html>
